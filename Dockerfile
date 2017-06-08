@@ -20,4 +20,4 @@ RUN apt-get update -q \
     && docker-php-ext-install json \
     && docker-php-ext-enable imagick
 
-COPY www.conf /usr/local/etc/php-fpm.d/
+COPY zzz-clutch.conf /usr/local/etc/php-fpm.d/
